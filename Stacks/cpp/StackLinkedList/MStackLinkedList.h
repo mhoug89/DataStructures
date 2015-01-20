@@ -1,5 +1,5 @@
-#ifndef __MSTACK_HPP__
-#define __MSTACK_HPP__
+#ifndef __MSTACK_H__
+#define __MSTACK_H__
 #include <cstddef>
 
 #define DEFAULT_MSTACK_SIZE 16
@@ -95,7 +95,7 @@ void MStackLinkedList<Type>::push(const Type &A) {
 #include <iostream>
 #include <string>
 #include <string.h>
-#include "MStackLinkedList.hpp"
+#include "MStackLinkedList.h"
 
 using namespace std;
 
