@@ -87,9 +87,6 @@ void MStackLinkedList<Type>::push(const Type &A) {
 }
 
 #endif
-<<<<<<< HEAD
-
-
 // Driver  *******************************************************************
 /*
 #include <iostream>
@@ -153,5 +150,3 @@ cin.get();
 return 0;
 }
 */
-=======
->>>>>>> e6fe6594c12dc3da62530a82fad6492f96259d28
