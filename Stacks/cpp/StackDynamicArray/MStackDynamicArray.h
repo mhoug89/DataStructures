@@ -95,7 +95,7 @@ void MStackDynamicArray<SomeType>::push(const SomeType &A) {
         newStart[i] = start[i];
       }
       delete[] start;  // Delete the old array.
-      start = newStart;  // Make start point to the new array/
+      start = newStart;  // Make start point to the new array.
     }
   }
 
