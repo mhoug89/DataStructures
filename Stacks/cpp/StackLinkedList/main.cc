@@ -25,30 +25,30 @@ int main()
   //  MStackLinkedList<const char*> myStack;
 
   MStackLinkedList<string> myStack;
-  myStack.push("I");
-  myStack.push("am");
-  myStack.push("on");
-  myStack.push("the");
-  myStack.push("stack");
+  myStack.Push("I");
+  myStack.Push("am");
+  myStack.Push("on");
+  myStack.Push("the");
+  myStack.Push("stack");
 
   //  MStackLinkedList<string> myStack;
   //  string I = "I";
   //  string am = "am";
-  //  myStack.push(I);
-  //  myStack.push(am);
+  //  myStack.Push(I);
+  //  myStack.Push(am);
   //
   //  MStackLinkedList<int> myStack;
-  //  myStack.push(1);
-  //  myStack.push(2);
-  //  myStack.push(3);
+  //  myStack.Push(1);
+  //  myStack.Push(2);
+  //  myStack.Push(3);
   //
   //  MStackLinkedList<NumberClass> myStack;
-  //  myStack.push(NumberClass(1));
-  //  myStack.push(NumberClass(2));
+  //  myStack.Push(NumberClass(1));
+  //  myStack.Push(NumberClass(2));
 
-  while (!myStack.isEmpty()) {
-    cout << "From main(): " << myStack.top() << "\n";
-    myStack.pop();
+  while (!myStack.IsEmpty()) {
+    cout << "From main(): " << myStack.Top() << "\n";
+    myStack.Pop();
   }
 
   cout << "\nPress any key to exit.";
