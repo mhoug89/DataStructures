@@ -2,8 +2,6 @@
 #define __MSTACK_H__
 #include <cstddef>
 
-#define DEFAULT_MSTACK_SIZE 16
-
 template <class Type>
 class MStackLinkedList {
   public:
@@ -29,9 +27,7 @@ class MStackLinkedList {
 };
 
 template <class Type>
-MStackLinkedList<Type>::MStackLinkedList() {
-  top_item_ = NULL;     // When top_item_ is NULL, the stack is empty.
-}
+MStackLinkedList<Type>::MStackLinkedList() : top_item_(NULL) { }
 
 template <class Type>
 MStackLinkedList<Type>::~MStackLinkedList() {
