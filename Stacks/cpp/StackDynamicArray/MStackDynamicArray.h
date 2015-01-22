@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <climits>
 
-#define DEFAULT_MSTACK_SIZE 16
 
 template <class SomeType>
 class MStackDynamicArray {
@@ -23,6 +22,7 @@ class MStackDynamicArray {
     // Methods
     void ResizeArray(int);
     // Data members
+    const static int kDefaultStackSize = 16;
     int max_size_;  // Max capacity of the backing array.
     int size_;  // Number of items currently in the backing array.
     SomeType *start_;  // The backing array.
@@ -30,9 +30,9 @@ class MStackDynamicArray {
 
 template <class SomeType>
 MStackDynamicArray<SomeType>::MStackDynamicArray()
-    : max_size_(DEFAULT_MSTACK_SIZE),
+    : max_size_(kDefaultStackSize),
       size_(0) {
-  start_ = new SomeType[DEFAULT_MSTACK_SIZE];
+  start_ = new SomeType[max_size_];
 }
 
 // Allow initialization with a specified max stack size.
